@@ -1,1 +1,1 @@
-web: gunicorn hmlsindstr.wsgim
+web: gunicorn sindSTR.wsgim
