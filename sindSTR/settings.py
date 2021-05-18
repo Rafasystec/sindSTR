@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'sindSTR.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '${DB_NAME:sindstr}',
-        'USER': '${DB_USER:postgres}',
-        'PASSWORD':'${DB_PWD:123456}',
-        'HOST':'${DB_HOST:localhost}',
-        'PORT':'${DB_PORT:5432}'
+        'NAME': os.getenv('DB_NAME','sindstr'),
+        'USER': os.getenv('DB_USER','postgres'),
+        'PASSWORD': os.getenv('DB_PWD','123456'),
+        'HOST':os.getenv('DB_HOST','localhost'),
+        'PORT':os.getenv('DB_PORT','5432')
     }
 }
 

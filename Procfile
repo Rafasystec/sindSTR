@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgim
+web: gunicorn hmlsindstr.wsgim

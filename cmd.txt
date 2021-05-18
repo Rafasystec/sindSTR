@@ -15,6 +15,9 @@ $ heroku config -a <your_app_name>
 @ - Set heroku enviroment variable
 $ heroku config:set <VARIABLE_NAME>=<VALUE> -a <your_app_name>
 
+@ - To sse an env variable use this
+$ heroku config:get <VARIABLE_NAME>
+
 -------------------------------
     FOR HEROKU DATABASE
 -------------------------------
