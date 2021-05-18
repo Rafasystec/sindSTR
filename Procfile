@@ -1,1 +1,1 @@
-web: gunicorn associados.wsgim
+web: gunicorn sindSTR.wsgi
