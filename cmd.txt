@@ -1,0 +1,25 @@
+-----------------------------
+    HEROKU
+-----------------------------
+<> -> means something to replace
+
+@ - to login on heroku
+$ heroku login
+
+@ - See heroku logs app
+$ heroku logs --tail -a <your_app_name>
+
+@ - See your heroku app configuration
+$ heroku config -a <your_app_name>
+
+@ - Set heroku enviroment variable
+$ heroku config:set <VARIABLE_NAME>=<VALUE> -a <your_app_name>
+
+-------------------------------
+    FOR HEROKU DATABASE
+-------------------------------
+heroku config:set DB_USER=
+heroku config:set DB_PWD= 
+heroku config:set DB_HOST= 
+heroku config:set DB_PORT= 
+heroku config:set DB_NAME=

@@ -79,14 +79,15 @@ WSGI_APPLICATION = 'sindSTR.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sindstr',
-        'USER': 'postgres',
-        'PASSWORD': '123456',
-        'HOST':'localhost',
+        'NAME': '${DB_NAME:sindstr}',
+        'USER': '${DB_USER:postgres}',
+        'PASSWORD':'${DB_PWD:123456}',
+        'HOST':'${DB_HOST:localhost}',
+        'PORT':'${DB_PORT:5432}'
     }
 }
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
