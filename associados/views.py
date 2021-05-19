@@ -10,3 +10,6 @@ def login(request):
 
 def register(request):
     return render(request,'register.html',{'title':'Register'})
+
+def associacao(request):
+    return render(request,'associacao.html',{'title':'Associação'})
